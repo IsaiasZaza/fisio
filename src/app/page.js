@@ -20,10 +20,10 @@ export default function Home() {
         style={{ backgroundImage: "url('/images.jfif')" }}
       >
         <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 shadow-2xl text-center">
-          Bem-vindo ao serviços Thiago Advogado Online - Seu Parceiro Jurídico!
+          Bem-vindo ao serviços Exemplo Advogado Online - Seu Parceiro Jurídico!
         </h1>
         <p className="text-base md:text-lg lg:text-2xl mb-4 text-center">
-          Seja bem-vindo(a) à Thiago, seu destino para soluções jurídicas confiáveis e personalizadas.
+          Seja bem-vindo(a) à Exemplo, seu destino para soluções jurídicas confiáveis e personalizadas.
         </p>
         <p className="text-sm md:text-base lg:text-lg mb-8 text-center max-w-2xl">
           Estamos aqui para oferecer suporte jurídico de alta qualidade, trazendo tranquilidade e resolução para as suas questões legais.
@@ -68,21 +68,21 @@ export default function Home() {
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
           <h2 className="text-xl font-bold text-gray-800 mb-2">
-            Izaquiel Souza - Sócio Fundador
+          Exemplo Exemplo - Sócio Fundador
           </h2>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Estatuto Humanizado
           </h3>
           <p className="text-gray-700 mb-4">
-            O Escritório Izaquiel Advogados & Associados pauta seu labor
+            O Escritório Exemplo Advogados & Associados pauta seu labor
             profissional lastreado em uma atuação alinhada à objetividade na
             solução de conflitos e almeja a efetividade da prestação
             jurisdicional.
           </p>
           <p className="text-gray-700 mb-4">
-            O Escritório possui como diferencial a presteza e zelo no
+            O Exemplo possui como diferencial a presteza e zelo no
             atendimento, dando observância a cada detalhe do direito de seus
-            clientes, fornecendo assim clareza e transparência durante todo curso
+            clientes, fornecendo assim clareza e Exemplo durante todo curso
             do processo.
           </p>
           <ul className="text-gray-700 list-none space-y-2">
