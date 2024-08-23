@@ -1,62 +1,41 @@
 import Image from "next/image";
 import Sobre from "@/components/Sobre";
+import Menu from "@/components/Menu";
+import ServicesSection from "@/components/ServicesSection";
+import Banner from "@/components/Banner";
+import Ajudar from "@/components/Ajudar";
 
 export default function Home() {
   return (
     <>
-      <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
-        <div className="text-2xl font-semibold">
-          <img src="/logo.png" alt="Logo" className="h-8 w-8 inline-block mr-2" />
-        </div>
-        <nav className="space-x-1">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">Meus Serviços</a>
-          <a href="#" className="hover:underline">Sobre Mim</a>
-          <a href="#" className="hover:underline">Contato</a>
-        </nav>
+      <header>
+        <Menu />
       </header>
-      <div
-        className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white px-4 md:px-8"
-        style={{ backgroundImage: "url('/images.jfif')" }}
-      >
-        <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 shadow-2xl text-center">
-          Bem-vindo ao serviços Exemplo Advogado Online - Seu Parceiro Jurídico!
-        </h1>
-        <p className="text-base md:text-lg lg:text-2xl mb-4 text-center">
-          Seja bem-vindo(a) à Exemplo, seu destino para soluções jurídicas confiáveis e personalizadas.
-        </p>
-        <p className="text-sm md:text-base lg:text-lg mb-8 text-center max-w-2xl">
-          Estamos aqui para oferecer suporte jurídico de alta qualidade, trazendo tranquilidade e resolução para as suas questões legais.
-        </p>
-        <a
-          href="#"
-          className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 text-center text-sm md:text-base"
-        >
-          Consiga ajuda Jurídica especializada agora!
-        </a>
-      </div>
-      <Sobre />
-
+      <main>
+        <Banner />
+      </main>
+      <ServicesSection />
       <section className="relative h-96 flex items-center justify-center text-white mt-8">
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
           style={{
-            backgroundImage: "url('/adv.jpg')", // Certifique-se de usar o caminho correto da imagem
+            backgroundImage: "url('/bannerB.png')", // Certifique-se de usar o caminho correto da imagem
           }}
         ></div>
 
-        <div className="relative z-10 p-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <div className="relative z-10 p-4 sm:p-8 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 text-orange-100">
             DIREITO COM RESPONSABILIDADE
           </h1>
-          <p className="text-lg md:text-2xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-orange-50">
             Conte com os melhores profissionais para defender seus interesses
           </p>
         </div>
 
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </section>
-      <section className="flex flex-col md:flex-row items-center justify-center py-16 px-8 bg-white">
+
+      <section className="flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 bg-white">
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
             src="/adv.jpg" // Certifique-se de que o caminho para a imagem esteja correto
@@ -67,19 +46,16 @@ export default function Home() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
-          <h2 className="text-xl font-bold text-gray-800 mb-2">
-          Exemplo Exemplo - Sócio Fundador
-          </h2>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Estatuto Humanizado
-          </h3>
-          <p className="text-gray-700 mb-4">
+          <h1 className="text-lg md:text-xl lg:text-3xl font-bold text-orange-800 mb-2">
+            Exemplo Exemplo - Adv.Ricardo
+          </h1>
+          <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-4">
             O Escritório Exemplo Advogados & Associados pauta seu labor
             profissional lastreado em uma atuação alinhada à objetividade na
             solução de conflitos e almeja a efetividade da prestação
             jurisdicional.
           </p>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-4">
             O Exemplo possui como diferencial a presteza e zelo no
             atendimento, dando observância a cada detalhe do direito de seus
             clientes, fornecendo assim clareza e Exemplo durante todo curso
@@ -105,6 +81,8 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      <Ajudar />
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {/* Seção de Links Rápidos */}
@@ -162,7 +140,7 @@ export default function Home() {
 
         {/* Copyright */}
         <div className="container mx-auto mt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} Seu Escritório de Advocacia. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Desenvolvido por <a className="hover:text-white transition-all" href="https://wa.link/edmws5">Isaias</a>. Todos os direitos reservados.
         </div>
       </footer>
 
