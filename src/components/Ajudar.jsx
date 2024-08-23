@@ -9,7 +9,7 @@ const Ajudar = () => {
                     Nós podemos te ajudar!
                 </h1>
                 <a
-                    href="https://wa.me/5561999044771"
+                    href="https://wa.me/556199244666"
                     className="flex items-center bg-amber-800 text-white rounded px-4 py-2 hover:bg-amber-700 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
