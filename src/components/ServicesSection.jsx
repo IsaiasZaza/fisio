@@ -45,7 +45,7 @@ const services = [
   
   export default function ServicesSection() {
     return (
-      <section className="py-12">
+      <section className="py-12 cursor-default">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-yellow-800">Nossos Serviços</h2>
           <p className="text-center mb-16 text-yellow-800 font-semibold text-lg">Somos um escritório de advocacia "full service" em Brasília-DF, e estamos comprometidos com a excelência na atuação em diferentes áreas do direito.</p>
