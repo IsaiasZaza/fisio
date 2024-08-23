@@ -15,7 +15,7 @@ const Ajudar = () => {
                     rel="noopener noreferrer"
                 >
                     <FaWhatsapp className="mr-2" />
-                    <span>(61) 99904-4771</span>
+                    <span>(61) 99244-3666</span>
                 </a>
             </div>
         </>
