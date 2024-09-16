@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Advogado Fulano",
-  description: "Advogado Fulano de Tall",
+  title: "Mauro Abadia Jr",
+  description: "Candidato a Vereador",
 };
 
 export default function RootLayout({ children }) {
