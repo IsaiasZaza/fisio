@@ -40,11 +40,11 @@ const proposals = [
 const Proposals = () => {
     return (
       <div className="bg-yellow-300 py-8">
-        <h1 className='text-center text-3xl mb-8 font-bold text-blue-800'>Nossas Propostas & Objetivos</h1>
-        <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <h1 className='text-center lg:text-3xl text-xl mb-8 font-bold text-blue-800'>Nossas Propostas & Objetivos</h1>
+        <div className="max-w-7xl mx-auto lg:px-5 px-8 grid grid-cols-1 md:grid-cols-4 gap-6">
           {proposals.map((proposal) => (
-            <div key={proposal.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-48">
+            <div key={proposal.id} className="bg-white rounded-lg overflow-hidden">
+              <div className="relative h-64">
                 <Image
                   src={proposal.imageUrl}
                   alt={proposal.title}
@@ -53,8 +53,8 @@ const Proposals = () => {
                 />
               </div>
               <div className="p-6 text-center">
-                <h2 className="text-xl font-bold text-gray-800 mb-4">{proposal.title}</h2>
-                <ul className="text-left text-gray-700">
+                <h2 className="text-xl font-bold text-blue-950 mb-4">{proposal.title}</h2>
+                <ul className="text-left text-blue-800 text-base">
                   {proposal.description.map((item, index) => (
                     <li key={index} className="mb-2">
                       • {item}
@@ -69,7 +69,7 @@ const Proposals = () => {
           <a
             href="/propostas.jpg"
             download
-            className="bg-blue-500 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-colors"
+            className="bg-blue-500 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-colors font-semibold"
           >
             Baixe nossas propostas
           </a>

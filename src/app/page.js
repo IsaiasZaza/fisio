@@ -14,21 +14,26 @@ export default function Home() {
         <Proposals />
       </main>
       <section className="relative h-96 flex items-center justify-center text-white">
+        {/* Imagem de fundo com sobreposição e ajuste de opacidade */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
           style={{
             backgroundImage: "url('/faixa01.jpg')", // Verifique o caminho correto da imagem
           }}
         ></div>
+
+        {/* Conteúdo principal com texto */}
         <div className="relative z-10 p-4 sm:p-8 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 text-blue-50">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 text-white">
             Mauro Abadia Jr - O Seu Vereador
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-50">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-yellow-400">
             Fé, União e Trabalho
           </p>
         </div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* Sobreposição com ajuste de opacidade */}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
       </section>
 
       <section className="flex flex-col md:flex-row items-center justify-center py-16 px-4 md:px-8 bg-white">
@@ -41,35 +46,23 @@ export default function Home() {
             className="border-none"
           />
         </div>
-        <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center md:text-left">
-          <h1 className="text-lg md:text-xl lg:text-3xl font-bold text-blue-800 mb-2">
-            Mauro Abadia Jr - Candidato a Vereador
+        <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-start md:text-left">
+          <h1 className="text-xl md:text-xl lg:text-3xl font-bold text-blue-800 mb-2">
+            Mauro Abadia Jr <span className="block text-base">Candidato a Vereador</span>
           </h1>
-          <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-4">
-            Mauro Abadia Jr é um candidato comprometido com o futuro da nossa cidade. Com uma visão clara e
-            estratégias eficazes, ele busca transformar desafios em oportunidades para todos.
+          <p className="text-gray-700 text-base md:text-lg lg:text-xl mb-4">
+            Mauro Abadia Jr é um candidato comprometido com o futuro da nossa cidade. <span className="font-bold text-blue-900">Com uma visão clara e
+              estratégias eficazes</span>, ele busca transformar desafios em oportunidades para todos.
           </p>
-          <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-4">
-            Sua candidatura é baseada em princípios de transparência, dedicação e compromisso com o bem-estar
-            de todos os cidadãos. Conheça mais sobre suas propostas e ajude a construir um futuro melhor para
+          <p className="text-gray-700 text-base md:text-lg lg:text-xl mb-4">
+            <span className="font-bold text-blue-900">Sua candidatura é baseada em princípios de transparência, dedicação e compromisso com o bem-estar
+              de todos os cidadãos.</span> Conheça mais sobre suas propostas e ajude a construir um futuro melhor para
             nossa cidade.
           </p>
           <ul className="text-gray-700 list-none space-y-2">
-            <li className="flex items-center">
-              <span className="text-yellow-500 mr-2">✔️</span>
-              Profissionais Qualificados
-            </li>
-            <li className="flex items-center">
-              <span className="text-yellow-500 mr-2">✔️</span>
-              Transparência do Início ao Fim
-            </li>
-            <li className="flex items-center">
-              <span className="text-yellow-500 mr-2">✔️</span>
-              Comprometimento com os Cidadãos
-            </li>
-            <li className="flex items-center">
-              <span className="text-yellow-500 mr-2">✔️</span>
-              Foco na Solução dos Problemas
+            <li className="flex items-center lg:text-xl text-base font-bold text-blue-900">
+              <span className="text-yellow-500 mr-2 ">✔️</span>
+              Faça a escolha certa, vote 10.000 para Mauro Abadia Jr e garanta um futuro melhor!
             </li>
           </ul>
         </div>
