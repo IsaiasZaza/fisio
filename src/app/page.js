@@ -2,6 +2,8 @@ import Image from "next/image";
 import Menu from "@/components/Menu";
 import Banner from "@/components/Banner";
 import Proposals from "@/components/Propasals"; // Corrigido o nome do componente para "Proposals"
+import SeccaoAmarela from "@/components/SeccaoAmarela";
+import SeccaoVerde from "@/components/SeccaoVerde";
 
 export default function Home() {
   return (
@@ -11,7 +13,8 @@ export default function Home() {
       </header>
       <main>
         <Banner />
-        <Proposals />
+        <SeccaoAmarela />
+        <SeccaoVerde />
       </main>
       <section className="relative h-96 flex items-center justify-center text-white">
         {/* Imagem de fundo com sobreposição e ajuste de opacidade */}
@@ -48,7 +51,7 @@ export default function Home() {
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-start md:text-left">
           <h1 className="text-xl md:text-xl lg:text-3xl font-bold text-blue-800 mb-2">
-            Mauro Abadia Jr <span className="block text-base">Candidato a Vereador</span>
+            Mauro Abadia Jr <span className="block text-base">A sua melhor opção para candidato a Vereador</span>
           </h1>
           <p className="text-gray-700 text-base md:text-lg lg:text-xl mb-4">
             Mauro Abadia Jr é um candidato comprometido com o futuro da nossa cidade. <span className="font-bold text-blue-900">Com uma visão clara e

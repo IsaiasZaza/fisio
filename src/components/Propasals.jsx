@@ -27,14 +27,6 @@ const proposals = [
     ],
     imageUrl: '/seguranca.png',
   },
-  {
-    id: 4,
-    title: 'Tecnologia Globalizada',
-    description: [
-      'Projeto de lei para a integração da juventude à tecnologia',
-    ],
-    imageUrl: '/ti.png',
-  },
 ];
 
 const Proposals = () => {
