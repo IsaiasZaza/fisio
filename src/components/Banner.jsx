@@ -15,7 +15,7 @@ const Banner = () => {
             {/* Banner para telas móveis (abaixo de lg) */}
             <div
                 className="block lg:hidden relative h-screen bg-no-repeat"
-                style={{ backgroundImage: "url('/teste.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+                style={{ backgroundImage: "url('/teste2.png')", backgroundSize: "cover", backgroundPosition: "center" }}
             >
             </div>
         </>

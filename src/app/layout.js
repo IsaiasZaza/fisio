@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mauro Abadia Jr",
-  description: "Candidato a Vereador",
+  description: "A sua melhor Opcao para candidato a Vereador",
 };
 
 export default function RootLayout({ children }) {

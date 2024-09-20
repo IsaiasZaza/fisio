@@ -10,8 +10,8 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <>
-      <header></header>
-      <main>
+
+      <main className="font-sans">
         <Banner />
         <div className="bg-yellow-500">
           <motion.p
@@ -28,9 +28,10 @@ export default function Home() {
             Vamos renovar nossa politica?
           </motion.p>
         </div>
-
-        <SeccaoVerde />
+        <div className="font-sans">
+          <SeccaoVerde />
           <SeccaoAmarela />
+        </div>
       </main>
 
       <motion.section
@@ -50,8 +51,8 @@ export default function Home() {
         >
           <Image
             src="/perfil.png"
-            width={400}
-            height={600}
+            width={250}
+            height={400}
             alt="Mauro Abadia Jr"
             className="border-none"
           />
@@ -59,19 +60,19 @@ export default function Home() {
 
         {/* Conteúdo de texto com animação */}
         <motion.div
-          className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-start md:text-left"
+          className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-start md:text-left font-sans"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 1.5 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-xl md:text-xl lg:text-3xl font-bold text-yellow-500 mb-2">
+          <h1 className="text-xl md:text-xl lg:text-3xl text-yellow-500 mb-2 font-extrabold">
             Mauro Abadia Jr
-            <span className="block text-base text-[#003366]">
+            <span className="block text-base text-yellow-500">
               A sua melhor opção para candidato a Vereador
             </span>
           </h1>
-          <p className="text-[#003366] text-base md:text-lg lg:text-xl mb-4">
+          <p className="text-[#003366] text-base md:text-lg lg:text-xl mb-4 mt-3">
             Mauro Abadia Jr é um candidato comprometido com o futuro da nossa cidade.
             <span className="font-bold text-[#003366]"> Com uma visão clara e estratégias eficazes</span>,
             ele busca transformar desafios em oportunidades para todos.
@@ -95,9 +96,9 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {/* Seção de Frase de Efeito */}
           <div>
-            <h2 className="text-lg font-semibold mb-4 text-yellow-400">"Juntos Construindo o Futuro da Nossa Cidade."</h2>
+            <h2 className="text-lg font-semibold mb-4 text-yellow-500">"Juntos Construindo o Futuro da Nossa Cidade."</h2>
             <p className="text-base">Vote - Mauro Abadia Jr</p>
-            <h2 className="text-sm mt-4 font-semibold text-yellow-400">"Fe, Uniao e Trabalho"</h2>
+            <h2 className="text-sm mt-4 font-semibold text-yellow-500">"Fe, Uniao e Trabalho"</h2>
           </div>
 
           {/* Seção de Informações de Contato */}

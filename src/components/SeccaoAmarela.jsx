@@ -22,7 +22,7 @@ export default function SeccaoAmarela() {
                             alt="Educação"
                             width={400}
                             height={300}
-                            className="rounded-lg shadow-lg"
+                            className="rounded-xl shadow-lg"
                         />
                     </motion.div>
 
@@ -41,9 +41,9 @@ export default function SeccaoAmarela() {
                             viewport={{ once: true }}
                         >
                             <div className="flex items-start">
-                                <div className="w-1 bg-[#003366]"></div>
+                                <div className="bg-[#003366]"></div>
                                 <div>
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#003366]">
+                                    <h2 className="text-1xl md:text-2xl lg:text-3xl font-extrabold text-[#003366]">
                                         SAÚDE
                                     </h2>
                                     <p className="text-sm md:text-base lg:text-lg mt-4 text-black">
@@ -61,9 +61,9 @@ export default function SeccaoAmarela() {
                             viewport={{ once: true }}
                         >
                             <div className="flex items-start">
-                                <div className="w-1 bg-[#003366]"></div>
+                                <div className=" bg-[#003366]"></div>
                                 <div>
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#003366]">
+                                    <h2 className="text-1xl md:text-2xl lg:text-3xl font-extrabold text-[#003366]">
                                         EDUCAÇÃO
                                     </h2>
                                     <p className="text-sm md:text-base lg:text-lg mt-4 text-black">
@@ -81,9 +81,9 @@ export default function SeccaoAmarela() {
                             viewport={{ once: true }}
                         >
                             <div className="flex items-start">
-                                <div className="w-1 bg-[#003366]"></div>
+                                <div className=" bg-[#003366]"></div>
                                 <div>
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#003366]">
+                                    <h2 className="text-1xl md:text-2xl lg:text-3xl font-extrabold text-[#003366]">
                                         SEGURANÇA
                                     </h2>
                                     <p className="text-sm md:text-base lg:text-lg mt-4 text-black">
