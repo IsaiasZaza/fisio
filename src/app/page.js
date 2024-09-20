@@ -6,6 +6,7 @@ import Proposals from "@/components/Propasals";
 import SeccaoAmarela from "@/components/SeccaoAmarela";
 import SeccaoVerde from "@/components/SeccaoVerde";
 import { motion } from 'framer-motion';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -84,9 +85,13 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {/* Seção de Frase de Efeito */}
           <div>
-            <h2 className="text-lg font-semibold mb-4 text-yellow-500">"Juntos Construindo o Futuro da Nossa Cidade."</h2>
+            <h2 className="text-lg font-semibold mb-4 text-yellow-500">
+              "Juntos Construindo o Futuro da Nossa Cidade."
+            </h2>
             <p className="text-base">Vote - Mauro Abadia Jr</p>
-            <h2 className="text-sm mt-4 font-semibold text-yellow-500">"Fe, Uniao e Trabalho"</h2>
+            <h2 className="text-sm mt-4 font-semibold text-yellow-500">
+              "Fe, Uniao e Trabalho"
+            </h2>
           </div>
 
           {/* Seção de Informações de Contato */}
@@ -101,7 +106,10 @@ export default function Home() {
           <div>
             <h2 className="text-lg font-semibold mb-4">Siga-nos</h2>
             <div className="flex space-x-4">
-              {/* Ícones de Redes Sociais */}
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-white text-2xl hover:text-yellow-500" />
+              </a>
+              {/* Adicione outros ícones de redes sociais aqui */}
             </div>
           </div>
         </div>
