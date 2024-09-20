@@ -5,7 +5,7 @@ import Image from "next/image";
 const Navbar = () => {
     return (
         <>
-            <nav className="bg-yellow-400 w-full z-10">
+            <nav className="bg-green-500 w-full z-10">
                 <div className="container mx-auto px-4 flex justify-between items-center h-16">
                     {/* Responsiveness for title */}
                     <h1 className="lg:block hidden text-blue-800 font-bold italic text-sm md:text-xl lg:text-2xl">
