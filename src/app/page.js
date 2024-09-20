@@ -14,19 +14,7 @@ export default function Home() {
       <main className="font-sans">
         <Banner />
         <div className="bg-yellow-500">
-          <motion.p
-            className="text-center lg:text-xl text-xl font-semibold py-4 text-white"
-            initial={{ x: -100 }}
-            whileInView={{ x: 100 }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "reverse",
-              duration: 3
-            }}
-            viewport={{ once: true }}
-          >
-            Vamos renovar nossa politica?
-          </motion.p>
+          <marquee className="text-center lg:text-xl text-xl font-semibold py-2 text-white">Vamos renovar nossa politica?</marquee>
         </div>
         <div className="font-sans">
           <SeccaoVerde />
